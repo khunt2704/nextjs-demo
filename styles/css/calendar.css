@@ -1,0 +1,176 @@
+.ui-datepicker-prev {
+
+    /* background: url(../../public/images/arow1left.png)no-repeat center !important; */
+
+    right: 27px;
+
+    left: inherit !important;
+
+}
+
+
+/* 
+.ui-datepicker-next {
+
+    background: url(../../public/images/arowyf1rigg.png)no-repeat center !important;
+
+} */
+
+
+
+.ui-datepicker .ui-datepicker-title {
+
+    text-align: left !important;
+
+}
+
+
+
+.ui-datepicker-prev, .ui-datepicker-next {
+
+    width: 23px !important;
+
+    height: 23px !important;
+
+    background-size: 7px !important;
+
+    border: none !important;
+
+    border-radius: 100% !important;
+
+    background-color: #f2f2f2 !important;
+
+}
+
+
+
+.ui-datepicker-prev span, .ui-datepicker-next span {
+
+    display: none !important;
+
+}
+
+
+
+.ui-datepicker-prev:hover, .ui-datepicker-next:hover {
+
+    background-color: #494b6866 !important;
+
+}
+
+
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+
+    top: 50% !important;
+
+    -webkit-transform: translateY(-50%) !important;
+
+    -moz-transform: translateY(-50%) !important;
+
+    transform: translateY(-50%) !important;
+
+}
+
+
+
+.ui-widget.ui-widget-content {
+
+    border-color: #eaeaea !important;
+
+    padding: 10px;
+
+}
+
+
+
+.ui-widget-header {
+
+    background: #fff !important;
+
+    border-color: #fff !important;
+
+}
+
+
+
+.ui-datepicker .ui-datepicker-title {
+
+    margin-left: 0 !important;
+
+    font-family: 'Mulish';
+
+}
+
+
+
+.ui-datepicker th {
+
+    color: #c9c9c9 !important;
+
+    font-family: 'Mulish';
+
+    font-weight: 400 !important;
+
+}
+
+
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+
+    background: none !important;
+
+    text-align: center !important;
+
+    padding: 6px 10px;
+
+    border-color: #ececec !important;
+
+    background: #fff !important;
+
+}
+
+
+
+.ui-state-default .ui-state-active {
+
+    border: 2px solid #494b68  !important;
+
+    color: #494b68  !important;
+
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+
+    border: 0 !important;
+
+}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+
+    color: #494b68  !important;
+
+    border: 1px solid #494b68  !important;
+
+}
+
+
+
+.ui-datepicker td {
+
+    border: 1px solid #ececec !important;
+
+}
+
+
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active,
+
+ a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+
+    color: #494b68  !important;
+
+    border: 1px solid #494b68  !important;
+
+}
+

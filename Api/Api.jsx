@@ -175,7 +175,7 @@ export const ApiGet = (type) => {
               icon: "warning",
             });
             // window.location.reload()
-            window.location = "preview/next/login";
+            window.location = "login";
           } else if (error?.message === "Request failed with status code 401") {
             // localStorage.clear()
             // window.location.reload()
@@ -220,7 +220,7 @@ export const ApiPost = (type, userData) => {
               icon: "warning",
             });
             // window.location.reload()
-            window.location = "preview/next/login";
+            window.location = "login";
           } else if (error?.message === "Request failed with status code 401") {
             // localStorage.clear()
             // window.location.reload()

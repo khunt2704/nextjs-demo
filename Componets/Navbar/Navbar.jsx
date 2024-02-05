@@ -92,7 +92,7 @@ const serachPage = (e) => {
     <header className="after_login header">
       <nav className="navbar navbar-expand-lg">
         <div className="container">
-          <Link href="/">
+          <Link href="/" className="navbar-brand">
             {/* <a className="navbar-brand"> */}
             <Assets src={"images/bnr-logo.png"} alt=""/>
             {/* </a> */}
@@ -268,8 +268,8 @@ const serachPage = (e) => {
                       alt=""
                     />
                     :
-                    <img alt=""
-                    src={Rectangle688}/>
+                    <Assets alt=""
+                    src={"images/Rectangle688.png"}/>
                     }
                     <div className="header_log">
                       <h6>

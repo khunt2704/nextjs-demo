@@ -6,6 +6,7 @@ import { ApiPostNoAuth } from "../Api/Api";
 import Loader from "../Componets/Loader/Loader";
 import No_Data_Found from "../Componets/No_data_found/No_Data_Found";
 import question from "../assets/images/question.png"
+import Assets from "@/Componets/Assest";
 
 const Faq = () => {
   const [data, setData] = useState([]);
@@ -68,8 +69,8 @@ const Faq = () => {
                   <div className="accordion_container" key={i}>
                     <div className="accordion_head" data-id={e?.id}>
                       <p>
-                        <img
-                          src={question}
+                        <Assets
+                          src={"images/question.png"}
                           alt=""
                         />
                         {e?.question}{" "}

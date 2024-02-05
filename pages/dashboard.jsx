@@ -9,6 +9,7 @@ import Dash2 from "../assets/images/dasg2.png";
 import Dash3 from "../assets/images/dasg3.png";
 import def from "../assets/images/default.png";
 import Image from "next/image";
+import Assets from "@/Componets/Assest";
 
 const Dashboard = () => {
   const dispatch = useDispatch();
@@ -70,7 +71,7 @@ const Dashboard = () => {
                       <div className="col-xl-4 col-lg-6 col-md-4 col-sm-6">
                         <div className="das_statis_box">
                           <span>
-                            <img alt="" src={Dash1} />
+                            <Assets alt="" src={"images/dasg1.png"} />
                           </span>
                           <div
                             className="stats_infos pointer"
@@ -87,7 +88,7 @@ const Dashboard = () => {
                           onClick={() => router.push("/my-wishlist")}
                         >
                           <span>
-                            <img alt="" src={Dash2} />
+                            <Assets alt="" src={"images/dasg2.png"} />
                           </span>
                           <div className="stats_infos">
                             <h2>My Wishlist </h2>
@@ -98,7 +99,7 @@ const Dashboard = () => {
                       <div className="col-xl-4 col-lg-6 col-md-4 col-sm-6">
                         <div className="das_statis_box">
                           <span>
-                            <img alt="" src={Dash3} />
+                            <Assets alt="" src={"images/dasg3.png"} />
                           </span>
                           <div className="stats_infos">
                             <h2>Last Login</h2>
@@ -169,7 +170,7 @@ const Dashboard = () => {
                                             alt=""
                                           />
                                         ) : (
-                                          <img src={def} alt="" />
+                                          <Assets src={"images/default.png"} alt="" />
                                         )}
                                       </span>
                                       <div className="order_details_dash">

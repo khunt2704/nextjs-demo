@@ -2,20 +2,21 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
-import Rectangle688 from "../../public/images/Rectangle688.png";
-import Dash1 from "../../public/images/das_icon1.png";
-import Dash2 from "../../public/images/das_icon2.png";
-import Dash3 from "../../public/images/das_icon6.png";
-import Dash4 from "../../public/images/das_icon5.png";
-import Dash5 from "../../public/images/das_icon3.png";
-import Dash6 from "../../public/images/gft-crd.png";
-import Dash7 from "../../public/images/das_icon4.png";
+import Rectangle688 from "../../assets/images/Rectangle688.png";
+import Dash1 from "../../assets/images/das_icon1.png";
+import Dash2 from "../../assets/images/das_icon2.png";
+import Dash3 from "../../assets/images/das_icon6.png";
+import Dash4 from "../../assets/images/das_icon5.png";
+import Dash5 from "../../assets/images/das_icon3.png";
+import Dash6 from "../../assets/images/gft-crd.png";
+import Dash7 from "../../assets/images/das_icon4.png";
+import Assets from "../Assest";
 // import { useLocation, useNavigate } from "react-router-dom";
 
 const Sidemenu = () => {
-  let userData=null;
+  let userData = null;
   if (typeof window !== 'undefined') {
-  userData = JSON.parse(localStorage.getItem("userinfo"));
+    userData = JSON.parse(localStorage.getItem("userinfo"));
   }
   const router = useRouter()
   const logout = () => {
@@ -43,20 +44,20 @@ const Sidemenu = () => {
                 alt=""
               /> */}
               {userData?.profile_image
-                          ?
-                    <img
-                      src={
-                         "https://artdevotee.com/preview/storage/app/public/profile_picture/" +
-                          userData?.profile_image
-                      }
-                      alt=""
-                    />
-                    :
-                    <span className="mr-2">
-                    <img alt=""
-                    src={Rectangle688}/>
-                    </span>
-                    }
+                ?
+                <img
+                  src={
+                    "https://artdevotee.com/preview/storage/app/public/profile_picture/" +
+                    userData?.profile_image
+                  }
+                  alt=""
+                />
+                :
+                <span className="mr-2">
+                  <Assets alt=""
+                    src={"images/Rectangle688.png"} />
+                </span>
+              }
             </em>
             <div className="media-body">
               <h4>
@@ -71,11 +72,11 @@ const Sidemenu = () => {
             <li>
               <Link
                 href="/dashboard"
-                
+                className={router.pathname === "/dashboard" && "actv"}
               >
-              {/* <a className={router.pathname === "/dashboard" && "actv"}>
-                <img alt=""
-                    src={Dash1}/> */}
+                {/* <a > */}
+                <Assets alt=""
+                  src={"images/das_icon1.png"} />
                 <span>Dashboard </span>
                 {/* </a> */}
               </Link>
@@ -83,53 +84,53 @@ const Sidemenu = () => {
             <li>
               <Link
                 href="/edit-profile"
-                
+                className={router.pathname === "/edit-profile" && "actv"}
               >
-              {/* <a className={router.pathname === "/edit-profile" && "actv"}>
-                <img alt=""
-                    src={Dash2}/> */}
+                {/* <a > */}
+                <Assets alt=""
+                  src={"images/das_icon1.png"} />
                 <span>Edit Profile</span>
-              {/* </a> */}
+                {/* </a> */}
               </Link>
             </li>
             {userData?.signup_by !== "G" && (
               <li>
                 <Link
                   href="/change-password"
-                 
+                  className={router.pathname === "/change-password" && "actv"}
                 >
-                {/* <a className={router.pathname === "/change-password" && "actv"}>
-                 <img alt=""
-                    src={Dash3}/> */}
-                    <span>Change Password</span>
-                {/* </a> */}
+                  {/* <a> */}
+                  <Assets alt=""
+                    src={"images/das_icon2.png"} />
+                  <span>Change Password</span>
+                  {/* </a> */}
                 </Link>
               </li>
             )}
             <li>
               <Link
                 href="/my-wishlist"
-               
+                className={router.pathname === "/my-wishlist" && "actv"}
               >
-              {/* <a  className={router.pathname === "/my-wishlist" && "actv"}>
-                <img alt=""
-                    src={Dash3}/> */}
+                {/* <a> */}
+                <Assets alt=""
+                  src={"images/das_icon3.png"} />
                 <span>My Wishlist</span>
-              {/* </a> */}
+                {/* </a> */}
               </Link>
             </li>
             <li>
               <Link
                 href="/my-order"
-               
-              >
-              {/* <a className={
+                className={
                   (router.pathname === "/my-order" ||
                     router.pathname === "/order-details") &&
                   "actv"
-                }> */}
-                <img alt=""
-                    src={Dash4}/>
+                }
+              >
+                {/* <a > */}
+                <Assets alt=""
+                  src={"images/das_icon4.png"} />
                 <span>My Order</span>
                 {/* </a> */}
               </Link>
@@ -137,34 +138,36 @@ const Sidemenu = () => {
             <li>
               <Link
                 href="/shopping-cart"
+                className={router.pathname === "/shopping-cart" && "actve"}
               >
-              {/* <a   className={router.pathname === "/shopping-cart" && "actve"}>
-                <img alt=""
-                    src={Dash5}/> */}
+                {/* <a   > */}
+                <Assets alt=""
+                  src={"images/das_icon5.png"} />
                 <span>My Cart</span>
-              {/* </a> */}
+                {/* </a> */}
               </Link>
             </li>
             <li>
               <Link
                 href="/gift-card"
-              >
-              {/* <a className={
+                className={
                   (router.pathname === "/gift-card" ||
                     router.pathname === "/gift-details" ||
                     router.pathname === "/purchase-gift-card") &&
                   "actv"
-                }> */}
-                <img alt=""
-                    src={Dash6}/>
+                }
+              >
+                {/* <a > */}
+                <Assets alt=""
+                  src={"images/gft-crd.png"} />
                 <span>Gift Card</span>
                 {/* </a> */}
               </Link>
             </li>
             <li>
               <a onClick={logout}>
-                <img alt=""
-                    src={Dash7}/>
+                <Assets alt=""
+                  src={"images/das_icon6.png"} />
                 <span>Log Out</span>
               </a>
             </li>

@@ -14,6 +14,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import rejectt from "../assets/images/rejectt.png";
+import Assets from "@/Componets/Assest";
 
 
 const Gift_Card_Checkout = () => {
@@ -651,8 +652,8 @@ const Gift_Card_Checkout = () => {
                                       >
                                         {" "}
                                         <p>Delete</p>
-                                        <img
-                                          src={rejectt}
+                                        <Assets
+                                          src={"images/rejectt.png"}
                                           className="blue-show"
                                           alt=""
                                         />

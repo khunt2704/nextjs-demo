@@ -17,6 +17,7 @@ import or_edit from "../assets/images/or_edit.png";
 import gr_edit from "../assets/images/gr_edit.png";
 import calendar from "../assets/images/calendar.png";
 import clickhe from "../assets/images/clickhe.png";
+import Assets from "@/Componets/Assest";
 
 
 const Edit_Profile = () => {
@@ -480,13 +481,13 @@ const Edit_Profile = () => {
                             />
                             <span className="absoul_spans">
                               <a className="pointer" onClick={openModal}>
-                                <img
-                                  src={or_edit}
+                                <Assets
+                                  src={"images/or_edit.png"}
                                   alt=""
                                   className="hoverb"
                                 />
-                                <img
-                                  src={gr_edit}
+                                <Assets
+                                  src={"images/gr_edit.png"}
                                   alt=""
                                   className="hovern"
                                 />
@@ -624,7 +625,7 @@ const Edit_Profile = () => {
                               adjustDateOnChange
                             />
                             <span className="absoul_spans">
-                              <img src={calendar} alt="" />
+                              <Assets src={"images/calendar.png"} alt="" />
                             </span>
                             <span className="errorInput">
                               {data?.dob ? "" : errors["dob"]}
@@ -649,14 +650,14 @@ const Edit_Profile = () => {
 
                               <label for="file-1">
                                 Click here to upload{" "}
-                                <img src={clickhe} alt="" />
+                                <Assets src={"images/clickhe.png"} alt="" />
                               </label>
                             </div>
                             <div className="uplodimg_pick">
                               {!image?.preview ? (
-                                <img src={Rectangle688} alt="" />
+                                <Assets src={"images/Rectangle688.png"} alt="" />
                               ) : (
-                                <img src={image?.preview} alt="" />
+                                <Assets src={image?.preview} alt="" />
                               )}
                             </div>
                           </div>

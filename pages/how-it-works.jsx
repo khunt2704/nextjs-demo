@@ -6,6 +6,7 @@ import Head from "next/head";
 // import Image from "next/future/image";
 import enquiry from "../assets/images/enquiry.png"
 import how_gift from "../assets/images/how-gift.png"
+import Assets from "@/Componets/Assest";
 
 const How_It_Works = () => {
   const [loading, setLoading] = useState(false);
@@ -68,12 +69,12 @@ const How_It_Works = () => {
               <div dangerouslySetInnerHTML={{ __html: data?.how_it_work2 }} />
             </div>
             <div className="how-img">
-              <img src={enquiry} alt=""/>
+              <Assets src={"images/enquiry.png"} alt=""/>
             </div>
           </div>
           <div className="how-box">
             <div className="how-img">
-              <img src={how_gift} alt=""/>
+              <Assets src={"images/how-gift.png"} alt=""/>
             </div>
             <div className="how-text pl-5">
               <div dangerouslySetInnerHTML={{ __html: data?.how_it_work3 }} />

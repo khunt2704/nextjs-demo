@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useLocation, useNavigate } from "react-router-dom";
 import logo_image  from "../../Assest/Images/bnr-logo.png"
 import { getMaintenance } from "../../Redux/Apidemo/maintananceDemoSlice";
+import Assets from "../Assest";
 const Maintenance = () => {
     const location = useLocation()
     const navigate = useNavigate()
@@ -29,7 +30,8 @@ const Maintenance = () => {
       <div className="goto-login">
         <div className="">
             <div className="maintenance">
-            <img src={logo_image} alt=""/>
+            {/* <img src={logo_image} alt=""/> */}
+            <Assets src="images/bnr-logo.png"/>
               {data && <h2>{data?.message}</h2>}
             </div>
         </div>

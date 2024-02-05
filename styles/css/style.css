@@ -3337,7 +3337,7 @@ input[type="checkbox"]:checked + .checkmark > span:before {
   color: #1a1c1d;
 }
 .dash_pro_link a span {
-  padding-left: 10px;
+  padding-left: 48px;
 }
 .dash_pro_link a > img {
   position: absolute;

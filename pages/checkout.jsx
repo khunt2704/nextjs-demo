@@ -14,6 +14,7 @@ import * as Yup from "yup";
 import FormikErrorFocus from "formik-error-focus";
 import rejectt from "../assets/images/rejectt.png";
 import def from "../assets/images/default.png";
+import Assets from "@/Componets/Assest";
 
 
 const Checkout = () => {
@@ -377,7 +378,7 @@ const Checkout = () => {
                                 alt=""
                               />
                             ) : (
-                              <img src={def} alt="" />
+                              <Assets src={"images/default.png"} alt="" />
                             )}
                           </span>
                           <div className="order_details_dash">
@@ -793,8 +794,8 @@ const Checkout = () => {
                                       >
                                         {" "}
                                         <p>Delete</p>
-                                        <img
-                                          src={rejectt}
+                                        <Assets
+                                          src={"images/rejectt.png"}
                                           className="blue-show"
                                           alt=""
                                         />

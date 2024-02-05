@@ -8,6 +8,7 @@ import image_big from "../assets/images/image-big.png";
 import image_small from "../assets/images/image-small.png";
 import image_small1 from "../assets/images/image-small1.PNG";
 import image_big2 from "../assets/images/image-big2.png";
+import Assets from "@/Componets/Assest";
 
 const About_Us = () => {
   const [loading, setLoading] = useState(false);
@@ -68,25 +69,25 @@ const About_Us = () => {
                   <div className="row">
                     <div className="col-lg-6 col-md-6 col-sm-6 col-12">
                       <div className="img-big">
-                        <img
-                          src={image_big}
+                        <Assets
+                          src={"images/image-big.png"}
                           alt=""
                         />
                       </div>
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-6 col-12">
                       <div className="img-small sml-fst">
-                        <img
+                        <Assets
                           src={
-                            image_small
+                            "images/image-small.png"
                           }
                           alt=""
                         />
                       </div>
                       <div className="img-small">
-                        <img
+                        <Assets
                           src={
-                            image_small1
+                            "images/image-small1.PNG"
                           }
                           alt=""
                         />
@@ -94,9 +95,9 @@ const About_Us = () => {
                     </div>
                     <div className="col-12">
                       <div className="img-big2">
-                        <img
+                        <Assets
                           src={
-                            image_big2
+                            "images/image-big2.png"
                           }
                           alt=""
                         />

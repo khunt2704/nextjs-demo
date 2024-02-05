@@ -23,6 +23,7 @@ import facebook from "../assets/images/facebook.png";
 import linkedin from "../assets/images/linkedin.png";
 import pinterest from "../assets/images/pinterest.png";
 import fa3 from "../assets/images/fa3.png";
+import Assets from "@/Componets/Assest";
 
 const Contact_Us = () => {
   const router = useRouter();
@@ -300,10 +301,8 @@ const Contact_Us = () => {
                             className="conc-btn"
                           >
                             Submit
-                            <img
-                              src={
-                                send_fly
-                              }
+                            <Assets
+                              src={"images/send-fly.png"}
                               alt=""
                             />
                           </button>
@@ -326,8 +325,8 @@ const Contact_Us = () => {
                   <div className="adrs-inr">
                     <div className="ad-sec-01">
                       <div className="sec-img">
-                        <img
-                          src={map_white}
+                        <Assets
+                          src={"images/map-white.png"}
                           alt=""
                         />
                       </div>
@@ -344,9 +343,9 @@ const Contact_Us = () => {
 
                     <div className="ad-sec-01">
                       <div className="sec-img">
-                        <img
+                        <Assets
                           src={
-                            mail_white
+                            "images/mail-white.png"
                           }
                           alt=""
                         />
@@ -366,9 +365,9 @@ const Contact_Us = () => {
 
                     <div className="ad-sec-01">
                       <div className="sec-img">
-                        <img
+                        <Assets
                           src={
-                            phone_white
+                            "images/phone-white.png"
                           }
                           alt=""
                         />
@@ -401,9 +400,9 @@ const Contact_Us = () => {
                               }
                             >
                               <a>
-                                <img
+                                <Assets
                                   src={
-                                    facebook
+                                    "images/facebook.png"
                                   }
                                   alt=""
                                 />
@@ -418,9 +417,9 @@ const Contact_Us = () => {
                               }
                             >
                               <a>
-                                <img
+                                <Assets
                                   src={
-                                    linkedin
+                                    "images/linkedin.png"
                                   }
                                   alt=""
                                 />
@@ -443,9 +442,9 @@ const Contact_Us = () => {
                               }
                             >
                               <a>
-                                <img
+                                <Assets
                                   src={
-                                    pinterest
+                                    "images/pinterest.png"
                                   }
                                   alt=""
                                 />
@@ -460,9 +459,9 @@ const Contact_Us = () => {
                           >
                             <li>
                               <a>
-                                <img
+                                <Assets
                                   src={
-                                    fa3
+                                    "images/fa3.png"
                                   }
                                   alt=""
                                   className="hverb"
